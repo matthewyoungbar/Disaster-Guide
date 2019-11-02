@@ -1,17 +1,1 @@
-{"hospitals": [
-  {"name": "St. Mary's Hospital", "Latitude": "42.74295920000001", "Longitude": "-73.6761879"},
-  {"name": "Planned Parenthood - Troy Health Center", "Latitude": "42.7316506", "Longitude": "-73.69108949999999"},
-  {"name": "Samaritan Hospital", "Latitude": "42.7340076", "Longitude": "-73.67267369999999"},
-  {"name": "Seton Health Pediatrics", "Latitude": "42.7337932", "Longitude": "-73.6877763"},
-  {"name": "Sleep Disorders Center", "Latitude": "42.7396511", "Longitude": "-73.67389709999999"},
-  {"name": "St. Peter's Diabates & Endocrine Care", "Latitude": "42.73966929999999", "Longitude": "-73.67391239999999"},
-  {"name": "St. Peter's Medical Oncology/Hematology", "Latitude": "42.74288000000001", "Longitude": "-73.67639799999999"},
-  {"name": "St. Peter's Health Partners Medical Associates, P.C.", "Latitude": "42.74295920000001", "Longitude": "-73.6761879"},
-  {"name": "Whitney Young Health Administrative Office", "Latitude": "42.7282618", "Longitude": "-73.700659"},
-  {"name": "Troy Family Health Center", "Latitude": "42.6971985", "Longitude": "-73.6908995"},
-  {"name": "Margaret W. Krause Center", "Latitude": "42.73346600000001", "Longitude": "-73.6706538"},
-  {"name": "Troy Medical Plaza", "Latitude": "42.7340238", "Longitude": "-73.68749190000001"},
-  {"name": "The Massry Center", "Latitude": "42.73996249999999", "Longitude": "-73.676469"},
-  {"name": "Whitney M. Young, Jr. Health Center - Watervliet", "Latitude": "42.7293351", "Longitude": "-73.70107539999999"},
-  {"name": "Dermatology for Animals", "Latitude": "42.7400441", "Longitude": "-73.73815399999999"}
-  ] }
+hospitals = '[{"name": "St. Marys Hospital", "Latitude": 42.74295920000001, "Longitude": -73.6761879}, {"name": "Planned Parenthood - Troy Health Center", "Latitude": 42.7316506, "Longitude": -73.69108949999999}, {"name": "Samaritan Hospital", "Latitude": 42.7340076, "Longitude": -73.67267369999999}, {"name": "Seton Health Pediatrics", "Latitude": 42.7337932, "Longitude": -73.6877763},{"name": "Sleep Disorders Center", "Latitude": 42.7396511, "Longitude": -73.67389709999999},{"name": "St. Peters Diabates & Endocrine Care", "Latitude": 42.73966929999999, "Longitude": -73.67391239999999},{"name": "St. Peters Medical Oncology/Hematology", "Latitude": 42.74288000000001, "Longitude": -73.67639799999999},{"name": "St. Peters Health Partners Medical Associates, P.C.", "Latitude": 42.74295920000001, "Longitude": -73.6761879},{"name": "Whitney Young Health Administrative Office", "Latitude": 42.7282618, "Longitude": -73.700659},{"name": "Troy Family Health Center", "Latitude": "42.6971985", "Longitude": "-73.6908995"},{"name": "Margaret W. Krause Center", "Latitude": "42.73346600000001", "Longitude": -73.6706538},{"name": "Troy Medical Plaza", "Latitude": 42.7340238, "Longitude": -73.68749190000001},{"name": "The Massry Center", "Latitude": 42.73996249999999, "Longitude": -73.676469},{"name": "Whitney M. Young, Jr. Health Center - Watervliet", "Latitude": 42.7293351, "Longitude": -73.70107539999999},{"name": "Dermatology for Animals", "Latitude": 42.7400441, "Longitude": -73.73815399999999}]';
