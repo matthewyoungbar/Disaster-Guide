@@ -68,7 +68,7 @@
           map: map,
           title: 'Hello World!',
           animation: google.maps.Animation.DROP,
-          // icon: "current_location.png"
+          icon: "current_location.png"
         });
         var hospitaldata = JSON.parse(hospitals);
         hospitaldata.forEach(hospital_marker);
@@ -102,7 +102,8 @@
           position: {lat: hosp.Latitude, lng: hosp.Longitude},
           map: map,
           title: hosp.name,
-          animation: google.maps.Animation.DROP
+          animation: google.maps.Animation.DROP,
+          icon: "hospital.png"
         });
         // mark.setMap(map);
         // hosp_markers.push(mark);
