@@ -1,14 +1,15 @@
 body {
-	height: 100%;
-	margin: 0;
-	width: 100%;
-	background-color: lightgray;
+  color: #325050;
+  background: #fff;
+  font-size: 70%;
 }
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+
 .Home{
   text-align: center;
 }
 .map {
-   width: 100%;
+   width: 80%;
    height: 400px;
    background-color: grey;
  }
