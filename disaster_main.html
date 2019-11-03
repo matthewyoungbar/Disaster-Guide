@@ -14,27 +14,35 @@
       /* Optional: Makes the sample page fill the window. */
       html, body {
         height: 100%;
-        margin: 0;
-        padding: 0;
+        margin: 20px;
+        padding: 50px;
       }
     </style>
   </head>
   <body>
-    <div class="Directory">
-      <h2>Directory</h2>
-      <ul>
-        <li>Report a Hazard</li>
-        <li>Call for Help</li>
-      </ul>
+    <nav class="Directory" style="z-index:3;width:300px;font-weight:bold;">
+      <div class="Direct">
+      <h3 class="Direct"><b>Directory</b></h3>
     </div>
+    <div class="links">
+      <a href="#" onclick="close()" class="side bar">Home</a>
+      <a href="#help" onclick="close()" class="side bar">Call for help</a>
+      <a href="#nearby re" onclick="close()" class="side bar"></a>
+
+      <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Designers</a>
+      <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Packages</a>
+      <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+    </div>
+    </nav>
     <div class="Home">
     <h1>Disaster Guide</h1>
-    <h2>Here are the current hazards in your area</h2>
+    <h2>Here are the current hazards in your area:</h2>
       <div id= "warnings">
       </div>
     </div>
     <div id="map"></div>
     <script type="text/javascript" src="hospitals.json"></script>
+    <script type="text/javascript" src="disasters.json"></script>
     <script>
       var map;
       // var hospitals = JSON.parse("hospitals");
@@ -56,7 +64,7 @@
 
         map = new google.maps.Map(document.getElementById('map'), {
           center: myLatLng,
-          zoom: 8
+          zoom: 6
         });
 
         var infowindow = new google.maps.InfoWindow({
@@ -73,6 +81,8 @@
         var hospitaldata = JSON.parse(hospitals);
         hospitaldata.forEach(hospital_marker);
         // hospital_marker(hospitaldata[0]);
+        var disasterdata = JSON.parse(earthquakes);
+        disasterdata.forEach(disaster_marker);
 
         marker.addListener('click', function() {
           infowindow.open(map, marker);
@@ -109,6 +119,19 @@
         // hosp_markers.push(mark);
         // mark.setMap(map);
       }
+      function disaster_marker(hosp) {
+        // window.alert(hosp.Longitude);
+        mark = new google.maps.Marker({
+          position: {lat: hosp.Latitude, lng: hosp.Longitude},
+          map: map,
+          title: hosp.name,
+          animation: google.maps.Animation.DROP,
+          icon: "disaster.png"
+        });
+        // mark.setMap(map);
+        // hosp_markers.push(mark);
+        // mark.setMap(map);
+      }
       function setMapOnAll(map) {
         for (var i = 0; i < hosp_markers.length; i++) {
           markers[i].setMap(map);
@@ -117,5 +140,6 @@
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA13MoccnqSpa-p4ZWvfU96Za9VI8dFp2U&callback=initMap"
     async defer></script>
+
   </body>
 </html>
